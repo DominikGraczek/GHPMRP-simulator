@@ -254,11 +254,12 @@ const MultiLevelMRP: React.FC = () => {
                         onChange={handleGhpOnHandChange}
                         className="bg-gray-800 border border-gray-600 rounded px-1 w-16"
                     />
-                    <span className="ml-4">Czas realizacji:</span>
+                    <span className="ml-2 mr-2">Czas realizacji:</span>
                     <input
                         type="number"
                         value={leadTimeGhp}
                         onChange={(e) => setLeadTimeGhp(Number(e.target.value))}
+                        className="bg-gray-800 border border-gray-600 rounded px-1 w-16"
                     ></input>
                 </div>
             </div>
@@ -377,23 +378,26 @@ const MultiLevelMRP: React.FC = () => {
                                 colSpan={periods + 1}
                                 className="border border-gray-700 px-2 py-1 text-center"
                             >
-                                <span>Czas realizacji:</span>
+
+                                <span className="mr-2">Czas realizacji:</span>
                                 <input
                                     type="number"
                                     value={leadTimeBlat}
                                     onChange={(e) =>
                                         setLeadTimeBlat(Number(e.target.value))
                                     }
+                                     className="bg-gray-800 border border-gray-600 rounded px-1 w-16"
                                 ></input>
-                                <span>Wielkość partii:</span>
+                                <span className=" ml-2 mr-2">Wielkość partii:</span>
                                 <input
                                     type="number"
                                     value={lotSizeBlat}
                                     onChange={(e) =>
                                         setLotSizeBlat(Number(e.target.value))
                                     }
+                                     className="bg-gray-800 border border-gray-600 rounded px-1 w-16"
                                 ></input>
-                                Poziom BOM = 1
+                                <span className="ml-2">Poziom BOM = 1</span>
                             </td>
                         </tr>
                     </tbody>
@@ -523,23 +527,25 @@ const MultiLevelMRP: React.FC = () => {
                                 colSpan={periods + 1}
                                 className="border border-gray-700 px-2 py-1 text-center"
                             >
-                                <span>Czas realizacji:</span>
+                                <span className="mr-2">Czas realizacji:</span>
                                 <input
                                     type="number"
                                     value={leadTimeKolka}
                                     onChange={(e) =>
                                         setLeadTimeKolka(Number(e.target.value))
                                     }
+                                    className="bg-gray-800 border border-gray-600 rounded px-1 w-16"
                                 ></input>
-                                <span>Wielkość partii:</span>
+                                <span className="ml-2 mr-2">Wielkość partii:</span>
                                 <input
                                     type="number"
                                     value={lotSizeKolka}
                                     onChange={(e) =>
                                         setLotSizeKolka(Number(e.target.value))
                                     }
+                                    className="bg-gray-800 border border-gray-600 rounded px-1 w-16"
                                 ></input>
-                                Poziom BOM = 1
+                                <span className="ml-2"> Poziom BOM = 1</span>
                             </td>
                         </tr>
                     </tbody>
@@ -669,7 +675,7 @@ const MultiLevelMRP: React.FC = () => {
                                 colSpan={periods + 1}
                                 className="border border-gray-700 px-2 py-1 text-center"
                             >
-                                <span>Czas realizacji:</span>
+                                <span className="mr-2">Czas realizacji:</span>
                                 <input
                                     type="number"
                                     value={leadTimeLozyska}
@@ -678,8 +684,9 @@ const MultiLevelMRP: React.FC = () => {
                                             Number(e.target.value)
                                         )
                                     }
+                                    className="bg-gray-800 border border-gray-600 rounded px-1 w-16"
                                 ></input>
-                                <span>Wielkość partii:</span>
+                                <span className="ml-2 mr-2">Wielkość partii:</span>
                                 <input
                                     type="number"
                                     value={lotSizeLozyska}
@@ -688,8 +695,9 @@ const MultiLevelMRP: React.FC = () => {
                                             Number(e.target.value)
                                         )
                                     }
+                                    className="bg-gray-800 border border-gray-600 rounded px-1 w-16"
                                 ></input>
-                                Poziom BOM = 2
+                                <span className="ml-2">Poziom BOM = 2</span>
                             </td>
                         </tr>
                     </tbody>
